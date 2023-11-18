@@ -1,0 +1,150 @@
+.form {
+    background-color: white;
+    box-shadow: 0 5px 15px black;
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 15px;
+    border-radius: 3px;
+    transition: all .3s;
+    width: 800px;
+}
+
+.title {
+    margin-bottom: 0.5rem;
+}
+
+.label {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: lighter;
+    width: 100%;
+
+    @media (max-width: 660px) {
+        flex: 1;
+        min-width: 45%;
+        flex-wrap: wrap;
+    }
+
+    @media (max-width: 400px) {
+        flex: 1;
+        min-width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+}
+
+.section__section-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin: 10px 0 20px;
+
+    @media (max-width: 660px) {
+        flex-wrap: wrap;
+    }
+}
+
+.address-section-wrapper {
+    flex-wrap: wrap;
+}
+
+.input-wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 5px;
+
+    &:focus {
+        // outline: 1px #22b2ea solid;
+    }
+
+    @media (max-width: 660px) {
+        flex: 1;
+        min-width: 45%;
+        flex-wrap: wrap;
+    }
+
+    @media (max-width: 400px) {
+        flex: 1;
+        min-width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+.input__address {
+    flex: 30%;
+}
+
+.select {
+    display: block;
+    margin-top: 5px;
+    padding: 5px;
+    cursor: pointer;
+    width: 100%;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.checkbox {
+    width: 20px;
+    margin-top: 0;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.sms-checkbox {
+    flex: none;
+    min-width: 0;
+}
+
+.gap-5 {
+    gap: 5px;
+}
+
+.label__gender {
+    flex: auto;
+    min-width: 0;
+}
+
+.btn {
+    padding: 1rem;
+    border-radius: 8px;
+    color: white;
+}
+
+.submit-btn {
+    background-color: #22b2ea;
+    cursor: pointer;
+
+    &:hover {
+        transition: all 0.1s linear;
+        background-color: #44bff0;
+    }
+}
+
+.disabledBtn {
+    background-color: gray;
+}
+
+.btn-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    position: relative;
+}
